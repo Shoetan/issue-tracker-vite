@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="font-poppins"> {count}</div> 
-      <button   className="font-poppins" onClick={() => { setCount(count + 1) }} > Increase counter </button>
+      <button   className=" font-poppins bg-secondary-color text-white-color" onClick={() => { setCount(count + 1) }} > Increase counter </button>
       <button className="font-poppins" onClick={() =>{setCount(count -1 )}}> Decrease counter </button>
     
       

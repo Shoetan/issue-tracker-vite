@@ -1,7 +1,7 @@
 module.exports = {
   content: [
 
-    "./index.html",
+    "./**/*.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./components/**/*.{vue,js,ts,jsx,tsx}",
     
@@ -9,10 +9,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-color': '#3f3cbb',
-        'secondary-color': '#121063',
-        'accent-color': '#ecebff',
-        'dark-color': '#ff77e9',
+        'white-color': '#FFFFFF',
+        'black-color': '#010101',
+        'primary-color': '#B1D4E0',
+        'secondary-color': '#2E8BC0',
+        'accent-color': '#145DA0',
+        
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'] 
