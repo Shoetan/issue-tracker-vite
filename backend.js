@@ -1,10 +1,14 @@
 
-import express from 'express'
-import cors from 'cors'
-require('dotenv'),config()
+const express = require('express')
+const cors = require('cors')
+const port = 8080
+require('dotenv').config()
 
-const PORT = 8080
+
 
 const app = express()
 
-app.listen(PORT, () => { console.log('listening on port: ${PORT}')})
+
+app.get('/', (req, res) => {res.json('hello')})
+
+app.listen(port, () => { console.log(`Listening on port : ${port}`) })

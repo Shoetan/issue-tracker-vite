@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+
+    "backend":"nodemon backend.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
