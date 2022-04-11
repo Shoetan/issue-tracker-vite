@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import Navbar from './components/navbar'
+
+import LoginPage from './components/loginpage'
+import SignInPage from './components/signinpage'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
 
   return (
     <>
-     <Navbar/>
-    
+      
       
     
       </>
