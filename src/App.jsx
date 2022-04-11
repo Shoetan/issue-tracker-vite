@@ -1,17 +1,18 @@
-
-import LoginPage from './components/loginpage'
-import SignInPage from './components/signinpage'
+import { useState } from 'react'
 
 
 
 
 function App() {
-
+  const [count, setCount] = useState(0)
 
 
   return (
     <>
-      <LoginPage />
+      <div className="font-poppins"> {count}</div> 
+      <button   className=" font-poppins bg-secondary-color text-white-color" onClick={() => { setCount(count + 1) }} > Increase counter </button>
+      <button className="font-poppins" onClick={() =>{setCount(count -1 )}}> Decrease counter </button>
+    
       
     
       </>
