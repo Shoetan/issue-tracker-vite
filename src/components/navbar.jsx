@@ -6,12 +6,12 @@ const Navbar = ({ navbarLogo, navbarLink, navbarGreet }) => {
         <div className=" container mx-auto flex justify-around items-center   mt-2 mb-2   rounded ">
             
             {/* Icon */}
-            <h1 className="font-poppins text-black-color">{navbarLogo}</h1>
+            <h1 className="font-poppins text-gray-700">{navbarLogo}</h1>
 
             {/* navigation links */}
             <div className="flex gap-8 items-center">
-                <h2 className="font-poppins text-black-color">{ navbarGreet}</h2>
-                <a href="" className="font-poppins text-white-color bg-accent-color p-2 rounded hover:bg-secondary-color">{ navbarLink } </a>
+                <h2 className="font-poppins text-gray-700">{ navbarGreet}</h2>
+                <a href="" className="font-poppins text-white-color bg-accent-color py-2 px-6 rounded-full hover:bg-secondary-color shadow-lg shadow-dark-color">{ navbarLink } </a>
             </div>
         </div>
      );
