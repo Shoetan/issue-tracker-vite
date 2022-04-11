@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar'
+import Form from '../components/form'
 
 
 const LoginPage = () => {
@@ -10,6 +11,18 @@ const LoginPage = () => {
                 navbarGreet="Don't have an account"
                 navbarLink="Sign up"
             />
+
+
+
+            <Form
+                email="Enter your email"
+                password="Enter your password"
+                btntext="Login"
+            />
+
+       
+
+
 
         </div>
      );

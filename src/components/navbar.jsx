@@ -3,7 +3,7 @@
 
 const Navbar = ({ navbarLogo, navbarLink, navbarGreet }) => {
     return ( 
-        <div className=" container mx-auto flex justify-around items-center   mt-2 mb-2 bg-white-color  rounded ">
+        <div className=" container mx-auto flex justify-around items-center   mt-2 mb-2   rounded ">
             
             {/* Icon */}
             <h1 className="font-poppins text-black-color">{navbarLogo}</h1>
