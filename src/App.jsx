@@ -4,13 +4,14 @@ import SignInPage from './components/signinpage'
 
 
 
+
 function App() {
 
 
 
   return (
     <>
-      
+      <LoginPage />
       
     
       </>
