@@ -1,9 +1,15 @@
-const Navbar = () => {
+const Navbar = ({navbarLogo, navbarLink, navbarGreet}) => {
     return ( 
-        <div>
+        <div className=" container mx-auto flex justify-around items-center   mt-2 mb-2 bg-white-color  rounded ">
+            
             {/* Icon */}
-            <p>Hello</p>
-            {/* navogation links */}
+            <h1 className="font-poppins text-black-color">{navbarLogo}</h1>
+
+            {/* navigation links */}
+            <div className="flex gap-8 items-center">
+                <h2 className="font-poppins text-black-color">{ navbarGreet}</h2>
+                <a href="" className="font-poppins text-white-color bg-accent-color p-2 rounded hover:bg-secondary-color">{ navbarLink } </a>
+            </div>
         </div>
      );
 }

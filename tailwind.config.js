@@ -12,8 +12,8 @@ module.exports = {
         'white-color': '#FFFFFF',
         'black-color': '#010101',
         'primary-color': '#B1D4E0',
-        'secondary-color': '#2E8BC0',
-        'accent-color': '#145DA0',
+        'accent-color': '#2E8BC0',
+        'secondary-color': '#145DA0',
         
       },
       fontFamily: {
