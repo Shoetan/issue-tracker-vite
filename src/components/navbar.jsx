@@ -1,4 +1,7 @@
-const Navbar = ({navbarLogo, navbarLink, navbarGreet}) => {
+
+/* created a stateless component known as navbar and passiing in props by destructuring the props into individuals */
+
+const Navbar = ({ navbarLogo, navbarLink, navbarGreet }) => {
     return ( 
         <div className=" container mx-auto flex justify-around items-center   mt-2 mb-2 bg-white-color  rounded ">
             
