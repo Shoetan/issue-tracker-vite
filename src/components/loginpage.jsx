@@ -3,6 +3,9 @@ import Form from '../components/form'
 
 
 const LoginPage = () => {
+
+
+ 
     return ( 
         <div>
             {/* calling the navbar component and assigning props to the navbar component  */}
