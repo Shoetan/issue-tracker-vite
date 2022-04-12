@@ -1,8 +1,8 @@
-import Navbar from '../components/navbar'
-import Form from '../components/form'
+import Navbar from './navbar'
+import Form from './form'
 
 
-const SignInPage = () => {
+const SignUpPage = () => {
     return (
         <div>
             {/* Calling the navbar component and assiging probs to the  component */}
@@ -17,11 +17,11 @@ const SignInPage = () => {
             <Form
                 email="Enter your email"
                 password="Enter your password"
-                btntext="Sign in"
+                btntext="Sign up"
             />
 
         </div>
      );
 }
  
-export default SignInPage;
+export default SignUpPage;
