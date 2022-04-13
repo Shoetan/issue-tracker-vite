@@ -19,7 +19,8 @@ const RegisterPage = () => {
                 email="Enter your email"
                 password="Enter your password"
                 btntext="Sign up"
-                fn = {registerUser}
+                fn={registerUser}
+                
             />
 
         </div>

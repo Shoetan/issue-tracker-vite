@@ -1,4 +1,6 @@
-import {useState} from 'react'
+import { useState } from 'react'
+
+
 
 const Form = ({ email, password, btntext, fn }) => {
     
@@ -13,14 +15,14 @@ const Form = ({ email, password, btntext, fn }) => {
                 <label className="font-poppins mb-2 text-gray-700">
                     {email}
                 </label>
-                <input type="email" name="" id="" placeholder="Enter your email" className="mb-6 w-full py-2 px-3 rounded shadow-lg shadow-dark-color outline-none leading-tight"  onChange={(e) =>{ setUserEmail (e.target.value)}}/>
+                <input type="email" placeholder="Enter your email" className="mb-6 w-full py-2 px-3 rounded shadow-lg shadow-dark-color outline-none leading-tight"  onChange={(e) =>{ setUserEmail (e.target.value)}}/>
 
                 <label className="font-poppins mb-2 text-gray-700">
                     {password}
                 </label>
-                <input type="password" name="" id="" placeholder="Enter your password" className="mb-6 w-full py-2 px-3 outline-none rounded shadow-lg shadow-dark-color leading-tight" onChange ={(e) => {setUserPassword(e.target.value)}} />
+                <input type="password" placeholder="Enter your password" className="mb-6 w-full py-2 px-3 outline-none rounded shadow-lg shadow-dark-color leading-tight" onChange ={(e) => {setUserPassword(e.target.value)}} />
 
-                <button className="font-poppins bg-accent-color text-white-color hover:bg-secondary-color hover:text-white-color py-2 px-6  rounded-full shadow-lg shadow-dark-color" onClick={fn}>
+                <button className="font-poppins bg-accent-color text-white-color hover:bg-secondary-color hover:text-white-color py-2 px-6  rounded-full shadow-lg shadow-dark-color" onClick={()=> {fn(userEmail,userPassword)}} >
                     {btntext}
                 </button>
                 <a href="#" className="text-center text-gray-700 text-xs mt-4">
