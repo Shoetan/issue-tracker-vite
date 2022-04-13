@@ -1,6 +1,6 @@
 
 import LoginPage from './components/loginpage'
-import SignInPage from './components/signinpage'
+import RegisterPage from './components/registerpage'
 
 
 
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <LoginPage />
+      <RegisterPage />
       
     
       </>

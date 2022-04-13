@@ -1,8 +1,9 @@
-import Navbar from '../components/navbar'
-import Form from '../components/form'
+import Navbar from './navbar'
+import Form from './form'
+import { registerUser } from '../Logic/register'
 
 
-const SignInPage = () => {
+const RegisterPage = () => {
     return (
         <div>
             {/* Calling the navbar component and assiging probs to the  component */}
@@ -12,16 +13,17 @@ const SignInPage = () => {
                 navbarLink="Login"
             />
 
-
+            {/* pass in the register function as props */}
 
             <Form
                 email="Enter your email"
                 password="Enter your password"
-                btntext="Sign in"
+                btntext="Sign up"
+                fn = {registerUser}
             />
 
         </div>
      );
 }
  
-export default SignInPage;
+export default RegisterPage;

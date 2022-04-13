@@ -16,11 +16,12 @@ const LoginPage = () => {
             />
 
 
-
+                    {/* pass the click event function as  prop */}
             <Form
                 email="Enter your email"
                 password="Enter your password"
                 btntext="Login"
+                
             />
 
        
