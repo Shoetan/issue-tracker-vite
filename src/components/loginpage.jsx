@@ -1,5 +1,6 @@
 import Navbar from '../components/navbar'
 import Form from '../components/form'
+import {loginUser} from '../Logic/login'
 
 
 const LoginPage = () => {
@@ -21,6 +22,7 @@ const LoginPage = () => {
                 email="Enter your email"
                 password="Enter your password"
                 btntext="Login"
+                fn ={loginUser}
                 
             />
 
