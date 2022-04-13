@@ -8,7 +8,7 @@ const registerUser = async (email, password) => {
     try {
         
         await createUserWithEmailAndPassword(auth, email, password)
-        console.log('I am register')
+        console.log('I am registered')
 
     } catch (error) {
        console.log(error.message) 
