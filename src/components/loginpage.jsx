@@ -1,9 +1,17 @@
 import Navbar from '../components/navbar'
 import Form from '../components/form'
-import {loginUser} from '../Logic/login'
+import { loginUser } from '../Logic/login'
+import {useNavigate} from 'react-router-dom'
 
 
 const LoginPage = () => {
+
+
+    let navigate = useNavigate()
+
+    const click = () => {
+        navigate('/register')
+    }
 
 
  
@@ -14,6 +22,7 @@ const LoginPage = () => {
                 navbarLogo="Bug tracker"
                 navbarGreet="Don't have an account"
                 navbarLink="Sign up"
+                clickEvent = {click}
             />
 
 
