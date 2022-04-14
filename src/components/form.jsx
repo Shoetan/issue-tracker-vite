@@ -3,8 +3,18 @@ import { useState } from 'react'
 
 
 const Form = ({ email, password, btntext, fn }) => {
+
+
+    /* Importing the use state hook to manage our state */
+
+
+
+    /* userEmail will keep track of the state while setUserEmail will update the state based on the input entered in the input field*/
     
     const [userEmail, setUserEmail] = useState("")
+
+    /* userPassword will keep track of the state while setUserPassword will update the state based on the input entered in the input field*/
+
     const [ userPassword, setUserPassword] = useState("")
 
     return ( 
@@ -26,7 +36,7 @@ const Form = ({ email, password, btntext, fn }) => {
                     {btntext}
                 </button>
                 <a href="#" className="text-center text-gray-700 text-xs mt-4">
-                       forgot password?   
+                       forgot password?  
                 </a>
 
             </div>
