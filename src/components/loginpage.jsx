@@ -17,7 +17,7 @@ const LoginPage = () => {
             />
 
 
-                    {/* pass the click event function as  prop */}
+                    {/* pass the login  function as  prop */}
             <Form
                 email="Enter your email"
                 password="Enter your password"
