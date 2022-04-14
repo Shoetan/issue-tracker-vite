@@ -1,9 +1,18 @@
 import Navbar from './navbar'
 import Form from './form'
 import { registerUser } from '../Logic/register'
+import {useNavigate} from 'react-router-dom'
 
 
 const RegisterPage = () => {
+
+    let navigate = useNavigate()
+
+    const click = () => {
+        navigate('/')
+    }
+
+
     return (
         <div>
             {/* Calling the navbar component and assiging probs to the  component */}
@@ -11,6 +20,7 @@ const RegisterPage = () => {
                 navbarLogo="Bug tracker"
                 navbarGreet="Already have an account"
                 navbarLink="Login"
+                clickEvent={click}
             />
 
             {/* pass in the register function as props */}
