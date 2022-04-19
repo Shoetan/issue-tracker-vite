@@ -3,6 +3,8 @@ import LoginPage from './components/loginpage'
 
 import RegisterPage from './components/registerpage'
 
+import Dashboard from './components/dashboard'
+
 /* React router imported to make naviagating the app easy */
 
 
@@ -20,6 +22,7 @@ function App() {
           {/* Route fixes the path and specifies what components to render */}
           <Route path="/" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       
       </Router>
