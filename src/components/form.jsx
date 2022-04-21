@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 
 
-const Form = ({ email, password, btntext, fn }) => {
+const Form = ({ email, password, btntext, handleClick }) => {
 
 
     /* Importing the use state hook to manage our state */
@@ -32,7 +32,7 @@ const Form = ({ email, password, btntext, fn }) => {
                 </label>
                 <input type="password" placeholder="Enter your password" className="mb-6 w-full py-2 px-3 outline-none rounded shadow-lg shadow-dark-color leading-tight" onChange ={(e) => {setUserPassword(e.target.value)}} />
 
-                <button className="font-poppins bg-accent-color text-white-color hover:bg-secondary-color hover:text-white-color py-2 px-6  rounded-full shadow-lg shadow-dark-color" onClick={()=> {fn(userEmail,userPassword)}} >
+                <button className="font-poppins bg-accent-color text-white-color hover:bg-secondary-color hover:text-white-color py-2 px-6  rounded-full shadow-lg shadow-dark-color" onClick={()=> {handleClick(userEmail,userPassword)}} >
                     {btntext}
                 </button>
                 <a href="#" className="text-center text-gray-700 text-xs mt-4">

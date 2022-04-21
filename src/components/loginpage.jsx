@@ -36,7 +36,7 @@ const LoginPage = () => {
                 btntext="Login"
 
                     /*below is the function used to login in an already existing user it accepts a function as its value*/
-                fn ={loginUser}
+                handleClick ={loginUser}
                 
             />
 
