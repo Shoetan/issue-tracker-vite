@@ -1,7 +1,10 @@
+import DashboardNav from '../components/dashboard_nav'
+
+
 const Dashboard = () => {
     return ( 
         <div>
-            I am the dashboard
+           <DashboardNav/>
         </div>
      );
 }
