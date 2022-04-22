@@ -1,7 +1,13 @@
 import Navbar from '../components/navbar'
 import Form from '../components/form'
-import { loginUser } from '../Logic/login'
+
+
 import {useNavigate} from 'react-router-dom'
+/* importing the method to be used to sign in from the firebase auth servives */
+import { signInWithEmailAndPassword } from 'firebase/auth'
+
+/* importing the auth service to be used */
+import { auth } from '../firebase_config'
 
 
 const LoginPage = () => {
@@ -12,6 +18,27 @@ const LoginPage = () => {
         /* this function will run when the button in the navbar and will redirect the user to the register page */
     const click = () => {
         navigate('/register')
+
+
+
+
+    }
+    const loginUser = async (email, password) => {
+
+
+
+        try {
+                /* calling the firebase function used to log in already existing user*/
+            await signInWithEmailAndPassword(auth, email, password)
+            console.log('I am logged in')
+            navigate('/dashboard')
+            // I cannot use the useNavigate hook here to redirect the user
+    
+        } catch (error) {
+            console.log(error.message)
+        }
+    
+    
     }
 
 
