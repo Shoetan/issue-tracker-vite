@@ -9,7 +9,7 @@ const DashboardNav = () => {
     <div className="flex  bg-secondary-color p-2 justify-end items-center gap-6 pr-6 sticky top-0">
 
       {/* first the navigation should span the whole page */}
-      <div className="flex bg-primary-color items-center justify-center rounded-md p-1">
+      <div className="flex bg-primary-color items-center justify-center rounded-md p-1 shadow-lg shadow-dark-color">
         <BiSearchAlt size={25} color="#767676"/>
         <input type="text"  className=" bg-primary-color outline-none"/>
       </div>
