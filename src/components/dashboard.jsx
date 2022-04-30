@@ -1,5 +1,6 @@
 import DashboardNav from '../components/dashboard_nav'
 import DashboardAside from './dashboard_aside';
+import DashboardMain from './dashboard_main';
 
 
 const Dashboard = () => {
@@ -10,6 +11,7 @@ const Dashboard = () => {
       </div>
       <div className="flex">
              <DashboardAside />
+            <DashboardMain/>
       </div>
        
        
